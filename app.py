@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-model = joblib.load("model.pkl")
+model = joblib.load("iris_model.pkl")
 
 @app.route("/")
 def home():
